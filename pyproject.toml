@@ -1,0 +1,26 @@
+[project]
+name = "mlb-run-expectancy-simulator"
+version = "0.1.0"
+description = "Run expectancy and lineup optimization research with MLB Stats API and Markov chains"
+requires-python = ">=3.11"
+
+dependencies = [
+  "pandas",
+  "numpy",
+  "scipy",
+  "requests",
+  "pydantic",
+  "matplotlib",
+  "seaborn",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+  "jupyter",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
